@@ -11,10 +11,10 @@
 --- VERSION: 0.1
 
 SMODS.Atlas {
-    key = '',
+    key = 'Wha',
     px = 32,
     py = 32,
-    path = '.png'
+    path = 'Wha.png'
 }
 
 -- ( , Clubs ) 
