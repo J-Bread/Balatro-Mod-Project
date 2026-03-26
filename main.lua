@@ -1,10 +1,10 @@
 
 --- STEAMODDED HEADER
---- MOD_NAME: 
---- MOD_ID: 
---- PREFIX: 
---- MOD_AUTHOR: []
---- MOD_DESCRIPTION: 
+--- MOD_NAME: Joker Test
+--- MOD_ID: JOKETEST
+--- PREFIX: J
+--- MOD_AUTHORS: [Jonathan Andrews and Joshua Sano]
+--- MOD_DESCRIPTION: Test for learning how Jokers Work
 --- PRIORITY: 
 --- BADGE_COLOR: 
 --- DISPLAY_NAME: 
