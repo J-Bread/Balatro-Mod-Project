@@ -1,4 +1,5 @@
-assert(SMODS.load_file("testJoker.lua"))()
+assert(SMODS.load_file("LuaFiles/testJoker.lua"))()
+
 
 --- STEAMODDED HEADER
 --- MOD_NAME: Joker Test
