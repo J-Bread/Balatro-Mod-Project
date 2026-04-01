@@ -1,3 +1,4 @@
+assert(SMODS.load_file("PPLTestJoker/testJoker.lua"))()
 
 --- STEAMODDED HEADER
 --- MOD_NAME: Joker Test
@@ -5,7 +6,7 @@
 --- PREFIX: J
 --- MOD_AUTHORS: [Jonathan Andrews and Joshua Sano]
 --- MOD_DESCRIPTION: Test for learning how Jokers Work
---- PRIORITY: 
+--- PRIORITY:1000
 --- BADGE_COLOR: 
 --- DISPLAY_NAME: 
 --- VERSION: 0.1
