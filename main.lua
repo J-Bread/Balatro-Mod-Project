@@ -1,5 +1,3 @@
-assert(SMODS.load_file("LuaFiles/testJoker.lua"))()
-
 
 --- STEAMODDED HEADER
 --- MOD_NAME: Joker Test
@@ -19,25 +17,25 @@ SMODS.Atlas {
     path = 'Wha.png'
 }
 
--- ( , Clubs ) 
+-- ( Test, Clubs ) 
 
 SMODS.Atlas {
-    key = "_clubs_lc",
-    path = "_clubs_lc.png",
+    key = "Test_clubs_lc",
+    path = "Test_card_lc.png",
     px = 71,
     py = 95,
 }
 SMODS.Atlas {
-    key = "_clubs_hc",
-    path = "_clubs_hc.png",
+    key = "Test_clubs_hc",
+    path = "Test_card_hc.png",
     px = 71,
     py = 95,
 }
 
 SMODS.DeckSkin {
-    key = "Clubs",
+    key = "TestClubs",
     suit = "Clubs",
-    loc_txt = "",
+    loc_txt = "Test",
     palettes = {
         {
             key = 'lc',
