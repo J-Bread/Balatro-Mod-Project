@@ -12,10 +12,10 @@ assert(SMODS.load_file("PPLTestJoker/testJoker.lua"))()
 --- VERSION: 0.1
 
 SMODS.Atlas {
-    key = 'Wha',
+    key = 'Test_icon',
     px = 32,
     py = 32,
-    path = 'Wha.png'
+    path = 'Test_icon.png'
 }
 
 -- ( Test, Clubs ) 
@@ -40,16 +40,16 @@ SMODS.DeckSkin {
     palettes = {
         {
             key = 'lc',
-			ranks = {'2', '3', '4', '5', '6', '7', '8', '9', '10', 'Jack', 'Queen', "King", "Ace",},
+			ranks = {'Jack', 'Queen', "King"},
             display_ranks = {"King", "Queen", "Jack"},
-            atlas = "",
+            atlas = "custom_atlas",
             pos_style = "suit"
         },
         {
             key = 'hc',
-			ranks = {'2', '3', '4', '5', '6', '7', '8', '9', '10', 'Jack', 'Queen', "King", "Ace",},
+			ranks = {'Jack', 'Queen', "King", "Ace"},
             display_ranks = {"King", "Queen", "Jack"},
-            atlas = "",
+            atlas = "custom_atlas",
             pos_style = "suit"
         }
     },
