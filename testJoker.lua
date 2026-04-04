@@ -14,12 +14,18 @@ SMODS.Atlas
 	py = 95
 }
 
+-- apparently this adds Talisman compatibility? I dunno but uh it was in the example so here we are
+to_big = to_big or function(x) return x end
+
 SMODS.Joker
 {
-	key = 'JtJoker',
+	key = 'JtJoker',	
+	blueprint_compat = true,
+	eternal_compat = true,
+	perishable_compat = true,
 	loc_txt = 
 	{
-		name = 'JtsJoker',
+		name = 'Jts Joker',
 		text = 
 	 {
 		'When Blind is selected,',
@@ -27,7 +33,10 @@ SMODS.Joker
 		'{X:mult,C:white}X#1#{} Mult',
 		'Gain {C:money}50${} at end of round'
 	 },
-		
+		-- so the way that the #number# syntax wroks is that in the config section it replaces 
+		-- #1# with the value of the first variable returned by loc_vars, #2# with the second, and so on, 
+		-- so since Xmult is 2.5 in the config, #1# will be replaced with 2.5 in the text, and 
+		-- the colour of the X will be white because of the {C:white} tag
 	},
 	
 	atlas = 'Jokers', 
@@ -35,9 +44,7 @@ SMODS.Joker
 	cost = 5, 
 	unlocked = true,
 	discovered = true,
-	blueprint_compat = true,
-	eternal_compat = false,
-	perishable_compat = false,
+
 	pos = {x = 0, y = 0},
 	config = {
 		extra = {
@@ -47,12 +54,6 @@ SMODS.Joker
 	loc_vars = function(self, info_queue,center)
 		info_queue[#info_queue+1] = G.P_CENTERS.j_joker
 		return {vars = {center.ability.extra.Xmult}}
-	end,
-	check_for_unlock = function(self, args)
-		if args.type == 'idk the types',
-			unlock_card(self)
-		end, 
-		unlock_card(self)
 	end,
 	
 	calculate = function(self, card, context)
