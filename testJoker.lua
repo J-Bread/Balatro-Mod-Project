@@ -1,4 +1,4 @@
---- STEAMMODDED HEADER
+--- STEAMODDED HEADER
 --- MOD_NAME: Jt's Joker
 --- MOD_ID: JTJOKER
 --- MOD_AUTHOR: [Jt and Josh]
