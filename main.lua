@@ -3,10 +3,11 @@
 --- MOD_ID: JOKETEST
 --- MOD_AUTHOR: [Jt and Josh]
 --- MOD_DESCRIPTION: testing face cards for joker test
---- PREFIX: aplle
+--- PREFIX: tests
 
--- assert(SMODS.load_file("testJoker.lua"))()
+local PREFIX = "tests"
 
+-- Icon Atlas
 SMODS.Atlas {
     key = 'Test_icon',
     path = 'Test_icon.png',
@@ -41,14 +42,14 @@ SMODS.DeckSkin {
             key = 'lc',
             ranks = {'Jack', 'Queen', 'King'},
             display_ranks = {'King', 'Queen', 'Jack'},
-            atlas = "testskin_clubs_lc",
+            atlas = PREFIX .. "_testskin_clubs_lc",
             pos_style = "suit"
         },
         {
             key = 'hc',
             ranks = {'Jack', 'Queen', 'King'},
             display_ranks = {'King', 'Queen', 'Jack'},
-            atlas = "testskin_clubs_hc",
+            atlas = PREFIX .. "_testskin_clubs_hc",
             pos_style = "suit"
         }
     },
