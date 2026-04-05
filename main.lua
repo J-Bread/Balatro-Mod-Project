@@ -5,7 +5,7 @@
 --- MOD_DESCRIPTION: testing face cards for joker test
 --- PREFIX: aplle
 
---- assert(SMODS.load_file("testJoker.lua"))()
+-- assert(SMODS.load_file("testJoker.lua"))()
 
 SMODS.Atlas {
     key = 'Test_icon',
@@ -14,8 +14,7 @@ SMODS.Atlas {
     py = 32,
 }
 
--- ( Test, Clubs ) 
-
+-- Clubs Atlases
 SMODS.Atlas{
     key = "testskin_clubs_lc",
     path = "Test_card_lc.png",
@@ -39,11 +38,17 @@ SMODS.DeckSkin {
     },
     palettes = {
         {
-            key = 'default',
+            key = 'lc',
             ranks = {'Jack', 'Queen', 'King'},
             display_ranks = {'King', 'Queen', 'Jack'},
-            lc_atlas = "testskin_clubs_lc",
-            hc_atlas = "testskin_clubs_hc",
+            atlas = "testskin_clubs_lc",
+            pos_style = "suit"
+        },
+        {
+            key = 'hc',
+            ranks = {'Jack', 'Queen', 'King'},
+            display_ranks = {'King', 'Queen', 'Jack'},
+            atlas = "testskin_clubs_hc",
             pos_style = "suit"
         }
     },
