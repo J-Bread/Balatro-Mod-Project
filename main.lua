@@ -40,17 +40,23 @@ SMODS.DeckSkin {
     palettes = {
         {
             key = 'lc',
-            ranks = {'Jack', 'Queen', 'King'},
-            display_ranks = {'King', 'Queen', 'Jack'},
             atlas = PREFIX .. "_testskin_clubs_lc",
-            pos_style = "deck"
+            pos_style = "deck",
+            ranks = {
+                Jack  = {x = 2, y = 0},
+                Queen = {x = 1, y = 0},
+                King  = {x = 0, y = 0}
+            },
         },
         {
             key = 'hc',
-            ranks = {'Jack', 'Queen', 'King'},
-            display_ranks = {'King', 'Queen', 'Jack'},
             atlas = PREFIX .. "_testskin_clubs_hc",
-            pos_style = "deck"
+            pos_style = "deck",
+            ranks = {
+                Jack  = {x = 2, y = 0},
+                Queen = {x = 1, y = 0},
+                King  = {x = 0, y = 0}
+            },
         }
     },
 }
