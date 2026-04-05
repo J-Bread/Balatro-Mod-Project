@@ -1,55 +1,49 @@
 --- STEAMODDED HEADER
 --- MOD_NAME: Joker Test
 --- MOD_ID: JOKETEST
---- PREFIX: J
---- MOD_AUTHORS: [Jonathan Andrews and Joshua Sano]
---- MOD_DESCRIPTION: Test for learning how Jokers Work
---- PRIORITY: -247
---- BADGE_COLOR: B30245
---- DISPLAY_NAME: Joker Test
---- VERSION: 0.1
+--- MOD_AUTHOR: [Jt and Josh]
+--- MOD_DESCRIPTION: testing face cards for joker test
+--- PREFIX: aplle
 
-assert(SMODS.load_file("testJoker.lua"))()
+--- assert(SMODS.load_file("testJoker.lua"))()
 
 SMODS.Atlas {
     key = 'Test_icon',
+    path = 'Test_icon.png',
     px = 32,
     py = 32,
-    path = 'Test_icon.png'
 }
 
 -- ( Test, Clubs ) 
 
-SMODS.Atlas {
-    key = "Test_clubs_lc",
+SMODS.Atlas{
+    key = "testskin_clubs_lc",
     path = "Test_card_lc.png",
     px = 71,
     py = 95,
 }
+
 SMODS.Atlas {
-    key = "Test_clubs_hc",
+    key = "testskin_clubs_hc",
     path = "Test_card_hc.png",
     px = 71,
     py = 95,
 }
 
+-- Deck Skin
 SMODS.DeckSkin {
     key = "TestClubs",
     suit = "Clubs",
-    loc_txt = "Test",
+    loc_txt = {
+        name = "Club Test"
+    },
     palettes = {
         {
-            key = 'lc',
-			ranks = {'Jack', 'Queen', "King"},
-            display_ranks = {"King", "Queen", "Jack"},
-            atlas = "Test_clubs_lc",
-            pos_style = "suit"
-        },
-        {
-            key = 'hc',
-			ranks = {'Jack', 'Queen', "King",},
-            display_ranks = {"King", "Queen", "Jack"},
-            atlas = "Test_clubs_hc",
+            key = 'default',
+            ranks = {'Jack', 'Queen', 'King'},
+            display_ranks = {'King', 'Queen', 'Jack'},
+            lc_atlas = "testskin_clubs_lc",
+            hc_atlas = "testskin_clubs_hc",
             pos_style = "suit"
         }
     },
