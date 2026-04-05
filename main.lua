@@ -43,14 +43,14 @@ SMODS.DeckSkin {
             ranks = {'Jack', 'Queen', 'King'},
             display_ranks = {'King', 'Queen', 'Jack'},
             atlas = PREFIX .. "_testskin_clubs_lc",
-            pos_style = "suit"
+            pos_style = "deck"
         },
         {
             key = 'hc',
             ranks = {'Jack', 'Queen', 'King'},
             display_ranks = {'King', 'Queen', 'Jack'},
             atlas = PREFIX .. "_testskin_clubs_hc",
-            pos_style = "suit"
+            pos_style = "deck"
         }
     },
 }
