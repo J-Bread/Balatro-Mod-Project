@@ -35,7 +35,7 @@ SMODS.DeckSkin {
     key = "TestClubs",
     suit = "Clubs",
     loc_txt = {
-        name = "Club Test"
+        ['en-us'] = "Test Clubs"
     },
     palettes = {
         {
