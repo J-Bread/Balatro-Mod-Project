@@ -1,0 +1,9 @@
+{
+    "id": "Principle Programming Languages",
+    "name": "Principle Programming Languages",
+    "author": ["Jt and Josh"],
+    "description": "Placeholder",
+    "prefix": "ppl",
+    "main_file": "main.lua",
+    "verision": "0.2.0"
+}
