@@ -1,21 +1,18 @@
 --- STEAMODDED HEADER
 --- MOD_NAME: Joker Test
 --- MOD_ID: JOKETEST
---- PREFIX: J
---- MOD_AUTHORS: [Jonathan Andrews and Joshua Sano]
---- MOD_DESCRIPTION: Test for learning how Jokers Work
---- PRIORITY: -247
---- BADGE_COLOR: B30245
---- DISPLAY_NAME: Joker Test
---- VERSION: 0.1
+--- MOD_AUTHOR: [Jt and Josh]
+--- MOD_DESCRIPTION: testing face cards for joker test
+--- PREFIX: tests
 
-assert(SMODS.load_file("testJoker.lua"))()
+local PREFIX = "tests"
 
+-- Icon Atlas
 SMODS.Atlas {
     key = 'Test_icon',
+    path = 'Test_icon.png',
     px = 32,
     py = 32,
-    path = 'Test_icon.png'
 }
 
 -- ( Test, Clubs ) 
@@ -33,10 +30,13 @@ local atlas_test_clubs_hc = SMODS.Atlas {
     py = 95,
 }
 
+-- Deck Skin
 SMODS.DeckSkin {
     key = "TestClubs",
     suit = "Clubs",
-    loc_txt = "Test",
+    loc_txt = {
+        name = "Club Test"
+    },
     palettes = {
         {
             key = 'lc',
