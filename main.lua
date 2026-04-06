@@ -10,7 +10,7 @@ local PREFIX = "tests"
 -- Icon Atlas
 SMODS.Atlas {
     key = 'Test_icon',
-    path = 'assets/Test_icon.png',
+    path = 'Test_icon.png',
     px = 32,
     py = 32,
 }
@@ -19,7 +19,7 @@ SMODS.Atlas {
 
 local atlas_test_clubs_lc = SMODS.Atlas {
     key = "Test_clubs_lc",
-    path = "Test_card_lc.png",
+    path = "assets/Test_card_lc.png",
     px = 71,
     py = 95,
 }
