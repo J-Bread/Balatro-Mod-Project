@@ -19,13 +19,13 @@ SMODS.Atlas {
 
 local atlas_test_clubs_lc = SMODS.Atlas {
     key = "Test_clubs_lc",
-    path = "assets/Test_card_lc.png",
+    path = "Test_card_lc.png",
     px = 71,
     py = 95,
 }
 local atlas_test_clubs_hc = SMODS.Atlas {
     key = "Test_clubs_hc",
-    path = "assets/Test_card_hc.png",
+    path = "Test_card_hc.png",
     px = 71,
     py = 95,
 }
