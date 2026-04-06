@@ -25,14 +25,14 @@ local atlas_OW_clubs_lc = SMODS.Atlas {
 }
 local atlas_OW_clubs_hc = SMODS.Atlas {
     key = "Overwatch_clubs_hc",
-    path = "Test_card_hc.png",
+    path = "Overwatch_Clubs_hc.png",
     px = 71,
     py = 95,
 }
 
 -- Deck Skin
 SMODS.DeckSkin {
-    key = "Overwatch Clubs",
+    key = "OverwatchClubs",
     suit = "Clubs",
     loc_txt = {
         ['en-us'] = "Overwatch Clubs"
