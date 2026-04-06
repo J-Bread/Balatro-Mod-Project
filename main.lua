@@ -5,7 +5,6 @@
 --- MOD_DESCRIPTION: testing face cards for joker test
 --- PREFIX: VidGame
 
-
 local PREFIX = "VidGame"
 
 -- Icon Atlas
