@@ -20,13 +20,13 @@ SMODS.Atlas {
 
 -- ( Test, Clubs ) 
 
-SMODS.Atlas {
+local atlas_test_clubs_lc = SMODS.Atlas {
     key = "Test_clubs_lc",
     path = "Test_card_lc.png",
     px = 71,
     py = 95,
 }
-SMODS.Atlas {
+local atlas_test_clubs_hc = SMODS.Atlas {
     key = "Test_clubs_hc",
     path = "Test_card_hc.png",
     px = 71,
@@ -42,14 +42,14 @@ SMODS.DeckSkin {
             key = 'lc',
 			ranks = {'Jack', 'Queen', "King"},
             display_ranks = {"King", "Queen", "Jack"},
-            atlas = "Test_clubs_lc",
+            atlas = atlas_test_clubs_lc.key,
             pos_style = "suit"
         },
         {
             key = 'hc',
 			ranks = {'Jack', 'Queen', "King",},
             display_ranks = {"King", "Queen", "Jack"},
-            atlas = "Test_clubs_hc",
+            atlas = atlas_test_clubs_hc.key,
             pos_style = "suit"
         }
     },
