@@ -3,9 +3,9 @@
 --- MOD_ID: JOKETEST
 --- MOD_AUTHOR: [Jt and Josh]
 --- MOD_DESCRIPTION: testing face cards for joker test
---- PREFIX: tests
+--- PREFIX: VidGame
 
-local PREFIX = "tests"
+local PREFIX = "VidGame"
 
 -- Icon Atlas
 SMODS.Atlas {
@@ -17,14 +17,14 @@ SMODS.Atlas {
 
 -- ( Test, Clubs ) 
 
-local atlas_test_clubs_lc = SMODS.Atlas {
-    key = "Test_clubs_lc",
-    path = "Test_card_lc.png",
+local atlas_OW_clubs_lc = SMODS.Atlas {
+    key = "Overwatch_clubs_lc",
+    path = "Overwatch_Clubs_lc.png",
     px = 71,
     py = 95,
 }
-local atlas_test_clubs_hc = SMODS.Atlas {
-    key = "Test_clubs_hc",
+local atlas_OW_clubs_hc = SMODS.Atlas {
+    key = "Overwatch_clubs_hc",
     path = "Test_card_hc.png",
     px = 71,
     py = 95,
@@ -32,24 +32,24 @@ local atlas_test_clubs_hc = SMODS.Atlas {
 
 -- Deck Skin
 SMODS.DeckSkin {
-    key = "TestClubs",
+    key = "Overwatch Clubs",
     suit = "Clubs",
     loc_txt = {
-        ['en-us'] = "Test Clubs"
+        ['en-us'] = "Overwatch Clubs"
     },
     palettes = {
         {
             key = 'lc',
 			ranks = {'Jack', 'Queen', "King"},
             display_ranks = {"King", "Queen", "Jack"},
-            atlas = atlas_test_clubs_lc.key,
+            atlas = atlas_OW_clubs_lc.key,
             pos_style = "ranks"
         },
         {
             key = 'hc',
 			ranks = {'Jack', 'Queen', "King",},
             display_ranks = {"King", "Queen", "Jack"},
-            atlas = atlas_test_clubs_hc.key,
+            atlas = atlas_OW_clubs_hc.key,
             pos_style = "ranks"
         }
     },
