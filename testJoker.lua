@@ -1,11 +1,3 @@
---- STEAMODDED HEADER
---- MOD_NAME: Jt's Joker
---- MOD_ID: JTJOKER
---- MOD_AUTHOR: [Jt and Josh]
---- MOD_DESCRIPTION: Buh?
---- PREFIX: xmpl
-
-
 SMODS.Atlas
 {
 	key = 'Jokers', 
