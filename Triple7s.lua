@@ -1,3 +1,10 @@
+--- STEAMODDED HEADER
+--- MOD_NAME: Triple 7s
+--- MOD_ID: TRIPLE7S
+--- MOD_AUTHOR: [Jt and Josh]
+--- MOD_DESCRIPTION: A Joker that gives you 7x mult if you play 3 7s
+--- MOD_PREFIX: 7s
+
 --- acts as a dictionary for the joker, it tells the game where to find the image and how big it is
 SMODS.Atlas
 {

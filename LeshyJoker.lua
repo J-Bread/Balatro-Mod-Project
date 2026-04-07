@@ -1,3 +1,10 @@
+--- STEAMODDED HEADER
+--- MOD_NAME: Leshy Joker
+--- MOD_ID: LESHYJOKER
+--- MOD_AUTHOR: [Jt and Josh]
+--- MOD_DESCRIPTION: A mod that adds a leshy joker, with a unique ability
+--- PREFIX: LeshyJoker
+
 --- acts more or less as a dictionary for LeshyJoker
 SMODS.Atlas
 {
