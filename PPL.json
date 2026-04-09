@@ -1,9 +1,10 @@
 {
     "id": "Principle Programming Languages",
-    "name": "Principle Programming Languages",
+    "name": "Lua Testing Mod Pack (PPL)",
     "author": ["Jt and Josh"],
-    "description": "Placeholder",
+    "description": "A mod to demonstrate Joshua Sano and Jonathan Andrew's understanding and overall programming skills. It adds a new deck skin, and 4 new jokers to the game. Designed over the span of a few weeks.",
     "prefix": "ppl",
     "main_file": "main.lua",
-    "verision": "0.2.0"
+    "verision": "0.8.3",
+    "badge_colour": "#001be7"
 }
