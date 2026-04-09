@@ -2,7 +2,7 @@
 --- MOD_NAME: Leshy Joker
 --- MOD_ID: LESHYJOKER
 --- MOD_AUTHOR: [Jt and Josh]
---- MOD_DESCRIPTION: A mod that adds a leshy joker, with a unique ability
+--- MOD_DESCRIPTION: A mod that adds a leshy joker, which when playing a boss blind creates a copy of the joker to the right of it, and takes money away at the end of every round
 --- PREFIX: LeshyJoker
 
 --- acts more or less as a dictionary for LeshyJoker
@@ -26,6 +26,7 @@ SMODS.Joker{
     blueprint_compat = true,
     eternal_compat = true,
     perishable_compat = true,
+
     loc_txt = 
     {
         name = 'Leshy',

@@ -10,7 +10,7 @@
 SMODS.Atlas
 {
     key = 'Triple7s',
-    path = 'Triple7s.png',
+    path = 'assets/Triple7s.png',
     px = 71,
     py = 95
 }
@@ -62,7 +62,7 @@ end,
 
 --- the function to check if you have 3 or more 7s in your hand, and if so gives you the xmult
 calculate = function(self, card, context)
-    --- joker_main just means will only run during when joker could play
+    --- joker_main jsut means will only run during when joker could play
     if context.joker_main then
         --- keeps track of how many 7s are in the hand
         local seven_count = 0
@@ -76,7 +76,6 @@ calculate = function(self, card, context)
         --- if there are 3 or more 7s, return the xmult and the message to show the player
         if seven_count >= 3 then
             return {
-                message = 'JACKPOT!!!',
                 xmult = card.ability.extra.xmult
             }
         end
