@@ -5,6 +5,7 @@
 --- MOD_DESCRIPTION: A Joker that gives you 7x mult if you play 3 7s
 --- MOD_PREFIX: 7s
 
+
 --- acts as a dictionary for the joker, it tells the game where to find the image and how big it is
 SMODS.Atlas
 {
@@ -61,7 +62,7 @@ end,
 
 --- the function to check if you have 3 or more 7s in your hand, and if so gives you the xmult
 calculate = function(self, card, context)
-    --- joker_main jsut means will only run during when joker could play
+    --- joker_main just means will only run during when joker could play
     if context.joker_main then
         --- keeps track of how many 7s are in the hand
         local seven_count = 0
@@ -75,6 +76,7 @@ calculate = function(self, card, context)
         --- if there are 3 or more 7s, return the xmult and the message to show the player
         if seven_count >= 3 then
             return {
+                message = 'JACKPOT!!!',
                 xmult = card.ability.extra.xmult
             }
         end
