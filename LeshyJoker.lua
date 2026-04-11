@@ -14,7 +14,7 @@ px = 71,
 py = 95,
 }
 
---- idk it's needed for talismen so uh yeah
+--- needed for talisman compats
 to_big = to_big or function(x) return x end
 
 ---  Creates the joker and defines all of its properties and abilities
