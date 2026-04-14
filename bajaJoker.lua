@@ -41,10 +41,10 @@ SMODS.Joker
 		'Gain {C:money}50${} at end of round',
 		'{C:green, s:0.4}Do the Dew!!{}'
 	 },
-		-- so the way that the #number# syntax wroks is that in the config section it replaces 
-		-- #1# with the value of the first variable returned by loc_vars, #2# with the second, and so on, 
-		-- so since Xmult is 2.5 in the config, #1# will be replaced with 2.5 in the text, and 
-		-- the colour of the X will be white because of the {C:white} tag
+		--- so the way that the #number# syntax works is that in the config section it replaces 
+		--- #1# with the value of the first variable returned by loc_vars, #2# with the second, and so on, 
+		--- so since Xmult is 2.5 in the config, #1# will be replaced with 2.5 in the text, and 
+		--- the colour of the X will be white because of the {C:white} tag
 	},
 	
 	--- references the atlas defined earlier
