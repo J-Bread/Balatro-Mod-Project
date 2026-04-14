@@ -9,7 +9,7 @@
 --- the "dictionary" for the joker, it tells the game where the images are, the size, etc.
 SMODS.Atlas
 {
-	key = 'Jokers', 
+	key = 'BajaJoker', 
 	path = 'bajaJoker.png',
 	px = 71,
 	py = 95
@@ -48,7 +48,7 @@ SMODS.Joker
 	},
 	
 	--- references the atlas defined earlier
-	atlas = 'Jokers', 
+	atlas = 'BajaJoker', 
 
 	--- the rarity of the joker, 1 is common and 4 is legendary, so this joker is legendary
 	rarity = 4, 
