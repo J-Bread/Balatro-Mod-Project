@@ -2,7 +2,7 @@
 --- MOD_NAME: Leshy Joker
 --- MOD_ID: LESHYJOKER
 --- MOD_AUTHOR: [Jt and Josh]
---- MOD_DESCRIPTION: A mod that adds a leshy joker, which when playing a boss blind creates a copy of the joker to the right of it, and takes money away at the end of every round
+--- MOD_DESCRIPTION: A mod that adds a Leshy Joker, which, when playing a boss blind, creates a copy of the joker to the right of it, and takes money away at the end of every round
 --- PREFIX: LeshyJoker
 
 --- acts more or less as a dictionary for LeshyJoker
@@ -40,8 +40,8 @@ SMODS.Joker{
     --- binds the atlas to the joker
         atlas = 'Jokers',
     
-        --- defines the rarity, 1 is common and 4 is legendary
-        rarity = 2,
+        --- defines the rarity, 1 is common and 4 is legendary. Originally was a rare, then uncommon, but was nerfed to Legendary since it's an over powered Joker.
+        rarity = 4,
 
         --- the cost of the joker
         cost = 7,
@@ -73,7 +73,7 @@ end,
                 --- the index so Leshy can find the next joker
                 local leshy_index = nil
 
-                ---loops thorugh all joker slots to find where Leshy is, so it can place the new card to the right of it
+                ---loops through all joker slots to find where Leshy is, so it can place the new card to the right of it
                 for i, c in ipairs(G.jokers.cards) do
                     if c == card then
                         leshy_index = i
